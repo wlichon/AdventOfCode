@@ -1,0 +1,17 @@
+C:\Users\wikto\source\repos\AdventOfCode\AoC\AoC3\obj\Debug\net6.0\AoC3.csproj.AssemblyReference.cache
+C:\Users\wikto\source\repos\AdventOfCode\AoC\AoC3\obj\Debug\net6.0\AoC3.Properties.Resources.resources
+C:\Users\wikto\source\repos\AdventOfCode\AoC\AoC3\obj\Debug\net6.0\AoC3.csproj.GenerateResource.cache
+C:\Users\wikto\source\repos\AdventOfCode\AoC\AoC3\obj\Debug\net6.0\AoC3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\wikto\source\repos\AdventOfCode\AoC\AoC3\obj\Debug\net6.0\AoC3.AssemblyInfoInputs.cache
+C:\Users\wikto\source\repos\AdventOfCode\AoC\AoC3\obj\Debug\net6.0\AoC3.AssemblyInfo.cs
+C:\Users\wikto\source\repos\AdventOfCode\AoC\AoC3\obj\Debug\net6.0\AoC3.csproj.CoreCompileInputs.cache
+C:\Users\wikto\source\repos\AdventOfCode\AoC\AoC3\bin\Debug\net6.0\AoC3.exe
+C:\Users\wikto\source\repos\AdventOfCode\AoC\AoC3\bin\Debug\net6.0\AoC3.deps.json
+C:\Users\wikto\source\repos\AdventOfCode\AoC\AoC3\bin\Debug\net6.0\AoC3.runtimeconfig.json
+C:\Users\wikto\source\repos\AdventOfCode\AoC\AoC3\bin\Debug\net6.0\AoC3.dll
+C:\Users\wikto\source\repos\AdventOfCode\AoC\AoC3\bin\Debug\net6.0\AoC3.pdb
+C:\Users\wikto\source\repos\AdventOfCode\AoC\AoC3\obj\Debug\net6.0\AoC3.dll
+C:\Users\wikto\source\repos\AdventOfCode\AoC\AoC3\obj\Debug\net6.0\refint\AoC3.dll
+C:\Users\wikto\source\repos\AdventOfCode\AoC\AoC3\obj\Debug\net6.0\AoC3.pdb
+C:\Users\wikto\source\repos\AdventOfCode\AoC\AoC3\obj\Debug\net6.0\AoC3.genruntimeconfig.cache
+C:\Users\wikto\source\repos\AdventOfCode\AoC\AoC3\obj\Debug\net6.0\ref\AoC3.dll

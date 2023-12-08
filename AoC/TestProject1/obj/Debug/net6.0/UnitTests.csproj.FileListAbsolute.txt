@@ -108,3 +108,8 @@ C:\Users\wikto\source\repos\AdventOfCode\AoC\TestProject1\obj\Debug\net6.0\refin
 C:\Users\wikto\source\repos\AdventOfCode\AoC\TestProject1\obj\Debug\net6.0\UnitTests.pdb
 C:\Users\wikto\source\repos\AdventOfCode\AoC\TestProject1\obj\Debug\net6.0\UnitTests.genruntimeconfig.cache
 C:\Users\wikto\source\repos\AdventOfCode\AoC\TestProject1\obj\Debug\net6.0\ref\UnitTests.dll
+C:\Users\wikto\source\repos\AdventOfCode\AoC\TestProject1\bin\Debug\net6.0\AoC3.deps.json
+C:\Users\wikto\source\repos\AdventOfCode\AoC\TestProject1\bin\Debug\net6.0\AoC3.runtimeconfig.json
+C:\Users\wikto\source\repos\AdventOfCode\AoC\TestProject1\bin\Debug\net6.0\AoC3.exe
+C:\Users\wikto\source\repos\AdventOfCode\AoC\TestProject1\bin\Debug\net6.0\AoC3.dll
+C:\Users\wikto\source\repos\AdventOfCode\AoC\TestProject1\bin\Debug\net6.0\AoC3.pdb

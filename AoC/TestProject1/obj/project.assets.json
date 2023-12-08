@@ -401,6 +401,16 @@
         "runtime": {
           "bin/placeholder/AoC2.dll": {}
         }
+      },
+      "AoC3/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/AoC3.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/AoC3.dll": {}
+        }
       }
     }
   },
@@ -1005,12 +1015,18 @@
       "type": "project",
       "path": "../AoC2/AoC2.csproj",
       "msbuildProject": "../AoC2/AoC2.csproj"
+    },
+    "AoC3/1.0.0": {
+      "type": "project",
+      "path": "../AoC3/AoC3.csproj",
+      "msbuildProject": "../AoC3/AoC3.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
       "AoC1 >= 1.0.0",
       "AoC2 >= 1.0.0",
+      "AoC3 >= 1.0.0",
       "Microsoft.NET.Test.Sdk >= 17.5.0",
       "NUnit >= 3.13.3",
       "NUnit.Analyzers >= 3.6.1",
@@ -1050,6 +1066,9 @@
             },
             "C:\\Users\\wikto\\source\\repos\\AdventOfCode\\AoC\\AoC2\\AoC2.csproj": {
               "projectPath": "C:\\Users\\wikto\\source\\repos\\AdventOfCode\\AoC\\AoC2\\AoC2.csproj"
+            },
+            "C:\\Users\\wikto\\source\\repos\\AdventOfCode\\AoC\\AoC3\\AoC3.csproj": {
+              "projectPath": "C:\\Users\\wikto\\source\\repos\\AdventOfCode\\AoC\\AoC3\\AoC3.csproj"
             }
           }
         }
