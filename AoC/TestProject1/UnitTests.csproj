@@ -21,6 +21,7 @@
     <ProjectReference Include="..\AoC1\AoC1.csproj" />
     <ProjectReference Include="..\AoC2\AoC2.csproj" />
     <ProjectReference Include="..\AoC3\AoC3.csproj" />
+    <ProjectReference Include="..\AoC4\AoC4.csproj" />
   </ItemGroup>
 
 </Project>

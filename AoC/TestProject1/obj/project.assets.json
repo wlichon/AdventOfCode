@@ -411,6 +411,16 @@
         "runtime": {
           "bin/placeholder/AoC3.dll": {}
         }
+      },
+      "AoC4/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/AoC4.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/AoC4.dll": {}
+        }
       }
     }
   },
@@ -1020,6 +1030,11 @@
       "type": "project",
       "path": "../AoC3/AoC3.csproj",
       "msbuildProject": "../AoC3/AoC3.csproj"
+    },
+    "AoC4/1.0.0": {
+      "type": "project",
+      "path": "../AoC4/AoC4.csproj",
+      "msbuildProject": "../AoC4/AoC4.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -1027,6 +1042,7 @@
       "AoC1 >= 1.0.0",
       "AoC2 >= 1.0.0",
       "AoC3 >= 1.0.0",
+      "AoC4 >= 1.0.0",
       "Microsoft.NET.Test.Sdk >= 17.5.0",
       "NUnit >= 3.13.3",
       "NUnit.Analyzers >= 3.6.1",
@@ -1069,6 +1085,9 @@
             },
             "C:\\Users\\wikto\\source\\repos\\AdventOfCode\\AoC\\AoC3\\AoC3.csproj": {
               "projectPath": "C:\\Users\\wikto\\source\\repos\\AdventOfCode\\AoC\\AoC3\\AoC3.csproj"
+            },
+            "C:\\Users\\wikto\\source\\repos\\AdventOfCode\\AoC\\AoC4\\AoC4.csproj": {
+              "projectPath": "C:\\Users\\wikto\\source\\repos\\AdventOfCode\\AoC\\AoC4\\AoC4.csproj"
             }
           }
         }

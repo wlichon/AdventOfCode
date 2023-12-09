@@ -11,6 +11,7 @@
           "AoC1": "1.0.0",
           "AoC2": "1.0.0",
           "AoC3": "1.0.0",
+          "AoC4": "1.0.0",
           "Microsoft.NET.Test.Sdk": "17.5.0",
           "NUnit": "3.13.3",
           "NUnit.Analyzers": "3.6.1",
@@ -333,6 +334,11 @@
         "runtime": {
           "AoC3.dll": {}
         }
+      },
+      "AoC4/1.0.0": {
+        "runtime": {
+          "AoC4.dll": {}
+        }
       }
     }
   },
@@ -444,6 +450,11 @@
       "sha512": ""
     },
     "AoC3/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "AoC4/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
