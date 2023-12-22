@@ -8,26 +8,6 @@ enum HandStrength{
     Five
 }
 
-type HighCard = {
-    cards : string[] 
-}
-
-type OnePair = {
-    pair : string,
-    cards : string[]
-}
-
-type TwoPair = {
-    olderPair : string,
-    youngerPair : string,
-    cards : string[]
-}
-
-type ThreeOfAKind = {
-    triple : string,
-    cards : string[]
-}
-
 type HandInfo = {
    hand : string,
    strength : HandStrength
@@ -231,33 +211,12 @@ const PartOne = (fileName : string) : number => {
 
     let winnings : number = 0
     let currentRank : number = 1
-    for(const val of hands.get(HandStrength.High) ?? []){
-        winnings += val.bet * currentRank
-        currentRank++
-    }
-    for(const val of hands.get(HandStrength.One) ?? []){
-        winnings += val.bet * currentRank
-        currentRank++
-    }
-    for(const val of hands.get(HandStrength.Two) ?? []){
-        winnings += val.bet * currentRank
-        currentRank++
-    }
-    for(const val of hands.get(HandStrength.Three) ?? []){
-        winnings += val.bet * currentRank
-        currentRank++
-    }
-    for(const val of hands.get(HandStrength.Full) ?? []){
-        winnings += val.bet * currentRank
-        currentRank++
-    }
-    for(const val of hands.get(HandStrength.Four) ?? []){
-        winnings += val.bet * currentRank
-        currentRank++
-    }
-    for(const val of hands.get(HandStrength.Five) ?? []){
-        winnings += val.bet * currentRank
-        currentRank++
+
+    for(let currentStrength = HandStrength.High; currentStrength <= HandStrength.Five; currentStrength++){
+        for(const hand of hands.get(currentStrength) ?? []){
+            winnings += hand.bet * currentRank
+            currentRank++
+        }
     }
     return winnings;
 }
@@ -282,38 +241,14 @@ const PartTwo = (fileName : string) : number => {
 
     let winnings : number = 0
     let currentRank : number = 1
-    for(const val of hands.get(HandStrength.High) ?? []){
-        winnings += val.bet * currentRank
-        currentRank++
-    }
-    for(const val of hands.get(HandStrength.One) ?? []){
-        winnings += val.bet * currentRank
-        currentRank++
-    }
-    for(const val of hands.get(HandStrength.Two) ?? []){
-        winnings += val.bet * currentRank
-        currentRank++
-    }
-    for(const val of hands.get(HandStrength.Three) ?? []){
-        winnings += val.bet * currentRank
-        currentRank++
-    }
-    for(const val of hands.get(HandStrength.Full) ?? []){
-        winnings += val.bet * currentRank
-        currentRank++
-    }
-    for(const val of hands.get(HandStrength.Four) ?? []){
-        winnings += val.bet * currentRank
-        currentRank++
-    }
-    for(const val of hands.get(HandStrength.Five) ?? []){
-        winnings += val.bet * currentRank
-        currentRank++
+    for(let currentStrength = HandStrength.High; currentStrength <= HandStrength.Five; currentStrength++){
+        for(const hand of hands.get(currentStrength) ?? []){
+            winnings += hand.bet * currentRank
+            currentRank++
+        }
     }
     return winnings;
 } 
-
-PartTwo("input.txt")
 
 module.exports = {
     handStrength,

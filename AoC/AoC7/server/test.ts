@@ -124,5 +124,5 @@ test('Hand Strength with jokers', () => {
 
 
 test('Part Two - hard', () => {
-    expect(app.PartTwo("input.txt")).toBe(5905);
+    expect(app.PartTwo("input.txt")).toBe(250825971);
 });
