@@ -1,0 +1,21 @@
+{
+  "name": "aoc8",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "compute-lcm": "^1.1.2",
+    "node-ts": "^6.0.1",
+    "ts-jest": "^29.1.1"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.11",
+    "ts-node": "^10.9.2"
+  }
+}
