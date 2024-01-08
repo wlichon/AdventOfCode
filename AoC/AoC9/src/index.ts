@@ -12,7 +12,7 @@ const fillPlaceholder = (longerSequence : number[], previousPlaceholder : number
     return longerSequence.slice(-1)[0] + previousPlaceholder
 }
 
-const run = (sequence : number[]) : number => {
+const generateSequenceTree = (sequence : number[]) : number[][] => {
     let current : number[] = sequence
     let sequenceTree : number[][] = []
     sequenceTree.push(current)
@@ -24,34 +24,67 @@ const run = (sequence : number[]) : number => {
         }
     }
 
+    return sequenceTree
+}
+
+const getForwardHistory = (tree : number[][]) : number => {
     let placeHolder : number = 0
-    for(let currSequence of sequenceTree){
+    for(let currSequence of tree){
         if(Number.isNaN(placeHolder)){
             console.log(placeHolder)
         }
+   
         let lastElement : number = currSequence.slice(-1)[0]
+    
         if(Number.isNaN(lastElement) || lastElement === undefined){
             lastElement = 0
         }
         placeHolder += lastElement
     }
+    return placeHolder
+}
 
+const getBackwardHistory = (tree : number[][]) : number => {
+    let placeHolder : number = 0
+    let prevSequence : number[] = [0]
+    for(let currSequence of tree){
+        if(Number.isNaN(placeHolder)){
+            console.log(placeHolder)
+        }
+        let firstElement : number = currSequence[0]
+        if(Number.isNaN(firstElement) || firstElement === undefined){
+            firstElement = 0
+        }
+        let currHistory : number = firstElement - prevSequence[0] 
+        currSequence.unshift(currHistory)
+        prevSequence = currSequence
+        placeHolder = currHistory
+
+    }
     return placeHolder
 }
 
 const PartOne = (fileName : string) : number => { 
     let input = fs.readFileSync(fileName, 'utf-8').split("\r\n")
-    let sequences = input.map(line => line.match(/-?\d+/g)?.map(val => Number(val)))
-    let predictions = sequences.map((seq : any) => run(seq))
-    return predictions.reduce((acc, current) => acc + current)
+    let sequences = input.map((line : String) => line.match(/-?\d+/g)?.map(val => Number(val)))
+    let seqTrees : number[][][] = sequences.map((seq : any) => generateSequenceTree(seq))
+    let predictions = seqTrees.map((tree : number[][]) => getForwardHistory(tree))
+    return predictions.reduce((acc : any, current : any) => acc + current)
 }
 
-console.log(PartOne("input.txt"))
-
+const PartTwo = (fileName : string) : number => { 
+    let input = fs.readFileSync(fileName, 'utf-8').split("\r\n")
+    let sequences = input.map((line : String) => line.match(/-?\d+/g)?.map(val => Number(val)))
+    let seqTrees : number[][][] = sequences.map((seq : any) => generateSequenceTree(seq))
+    let predictions = seqTrees.map((tree : number[][]) => getBackwardHistory(tree))
+    return predictions.reduce((acc : any, current : any) => acc + current)
+}
 
 module.exports = {
     generateSequence,
     fillPlaceholder,
+    getForwardHistory,
+    getBackwardHistory,
     PartOne,
-    run
+    PartTwo,
 }

@@ -18,11 +18,13 @@ test('Fill Placeholder', () => {
 })
 
 
-test('Run test', () => {
-  let result : number = app.run([
-    10, 7, 4, 1, -2, -5, -8, -11, -14, -17, -20, -23, -26, -29, -32, -35, -38, -41, -44, -47, -50
+test('getForwardHistory test', () => {
+  let result : number = app.getForwardHistory([
+    [1, 1, 1, 1 ],
+    [2, 3, 4, 5, 6],
+    [1, 3, 6, 10, 15, 21],
   ])
-  expect(result).toBe(-53)
+  expect(result).toBe(28)
 })
 
 
@@ -36,5 +38,20 @@ test('Easy Test', () => {
 })
 
 test('Hard Test', () => {
-  expect(app.PartOne("input.txt")).toBe(11)
+  expect(app.PartOne("input.txt")).toBe(1930746032)
+})
+
+
+test('getBackwardHistory test', () => {
+  let result : number = app.getBackwardHistory([
+    [2,2,2],
+    [0, 2, 4, 6],
+    [3, 3, 5, 9, 15],
+    [10,  13,  16,  21,  30,  45],
+  ])
+  expect(result).toBe(5)
+})
+
+test('Hard Test', () => {
+  expect(app.PartTwo("input.txt")).toBe(1930746032)
 })
